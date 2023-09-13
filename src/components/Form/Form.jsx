@@ -5,10 +5,11 @@ import ContainerRow from '../Container/ContainerRow'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import SubmitBtn from '../Buttons/SubmitBtn'
+import { useGlobalContext } from '../../Context/GlobalContext'
 
-const Form = ({handleCompletePayment,handleChange, hideForm,customerName}) => {
+const Form = () => {
 
-
+  const  {handleCompletePayment,handleChange, hideForm,customerName}=useGlobalContext()
 
   return (
     <section className="form-wrapper">

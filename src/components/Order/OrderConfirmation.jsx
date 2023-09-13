@@ -1,8 +1,11 @@
 import React from 'react'
 import SubmitBtn from '../Buttons/SubmitBtn'
 import Container from '../Container/Container'
+import { useGlobalContext } from '../../Context/GlobalContext'
 
-const OrderConfirmation = ({customerName,newOrder}) => {
+const OrderConfirmation = () => {
+
+    const {customerName,newOrder}=useGlobalContext()
   return (
     <Container className="order-confirmation-container flex-col  " >
           

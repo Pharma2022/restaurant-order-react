@@ -1,8 +1,12 @@
 import React from 'react'
 import ContainerRow from '../Container/ContainerRow'
+import { useGlobalContext } from '../../Context/GlobalContext'
 
-const OrderTotal = ({isDiscounted=false,subTotal,handleCompleteOrder}) => {
+const OrderTotal = () => {
     
+    const {isDiscounted=false,subTotal,handleCompleteOrder}=useGlobalContext()
+
+
     const total=isDiscounted? (subTotal*0.9).toFixed(2) :subTotal
     const discount =isDiscounted ? (subTotal-total).toFixed(2) :null
 

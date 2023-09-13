@@ -3,13 +3,16 @@ import {FaMinusCircle,FaPlusCircle} from 'react-icons/fa'
 import ContainerRow from '../Container/ContainerRow'
 import ContainerCol from '../Container/ContainerCol'
 import IconButton from '../Buttons/IconButton'
+import { useGlobalContext } from '../../Context/GlobalContext'
 
 const MenuItem = ({name,
     ingredients,
     price,
     emoji,
-    id,addItem,subtractItem
+    id
     }) => {
+        const {addItem,subtractItem,orderArr,targetFoodItem}=useGlobalContext()
+
   return (
     <>
     <ContainerRow className="menu-item">
@@ -26,9 +29,9 @@ const MenuItem = ({name,
                         </ContainerCol>  
                 </ContainerRow>
                 <ContainerRow className="menu-button-wrapper">
-                    <IconButton className="menu-button"  >
+               { targetFoodItem(orderArr,id)?    <IconButton className="menu-button"  >
                         <FaMinusCircle  onClick={()=>subtractItem(id)}/>
-                    </IconButton>
+                    </IconButton>:null}
                     <IconButton className="menu-button"  >
                         
                         <FaPlusCircle  onClick={()=>addItem(id)} />
