@@ -1,0 +1,436 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+}
+
+:root{
+  --ff-verdana:'Verdana', sans-serif;
+  --ff-smythe: 'Smythe', cursive;
+  --ff-inter:'Inter', sans-serif;
+  --white-primary:#fff;
+  --black-primary:#000;
+  --black-secondary:#3C3C3C;
+  --black-tertiary:#393333;
+  --gray-100:#d2d2d2; 
+  --gray-200:#bbb;
+  --gray-400:#8b8b8b;
+  --gray-500:#757575;
+  --gray-700:#3C3C3C;
+  --green-100:#ECFDF5;
+  --green-200:#16db99;
+  --green-500:#11a775;
+  --green-700:#065F46;
+  
+}
+
+html{
+
+ font-size: .9rem;
+
+}
+#root{
+  max-height: 100vh;
+}
+
+  /* <!--CSS RESET --> */
+section,div,span,form,label,input,button,h1,h2,h3,h4,h5,p,body,html {
+  margin: 0;
+  padding: 0
+ 
+} 
+
+button,input{
+  border: none;
+  outline: none;
+}
+
+
+  /* <!-- Utility Styles --> */
+.flex-row{
+  display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.space-between{
+  justify-content: space-between;    
+}
+.space-around{
+  justify-content: space-around;
+}
+.space-evenly{
+  justify-content: space-evenly;
+}
+.justify-center{
+  justify-content: center;   
+}
+.flex-start{
+  justify-content: flex-start;
+}
+
+.align-center{
+  align-items: center;    
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.width-full{
+  width: 100%;
+}
+.hide{
+  display: none;
+}
+button:disabled{
+  opacity: .5;
+}
+.container{
+  width: 100%;
+  max-width: 100vw;
+  margin-inline:auto;
+  padding-inline: .75rem;
+  padding-block: 1rem;
+  
+
+}
+
+
+
+  /* <!-- Typography --> */
+
+body{
+  font-family: var(--ff-smythe);
+  
+}
+header{
+  /* position: sticky; */
+  text-align: left;
+  font-weight: 400;
+}
+.title{
+  font-size: 2.4rem;
+  color: var(--white-primary);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+.subtitle{
+  font-size: 1.375rem;   
+  color: var(--white-primary);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+.menu-food-emoji{
+  font-family: var(--ff-inter);
+  font-size:4rem; 
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.72;
+  letter-spacing: -0.09838rem;
+}
+
+
+.menu-food-name{
+  font-size: 1.75rem;
+  color: var(--black-primary)    
+}
+.menu-food-ingredients{
+  font-size: .9rem;
+  color: var(--gray-400);
+}
+.menu-food-price{
+  font-size: 1.75rem;
+  color: var(--black-primary);
+}
+.menu-button{
+  font-family: var(--ff-inter);
+  font-size: 2rem;
+  color: var(--green-700)
+}
+
+.order-title{
+  font-size: 1.75rem;
+  color: var(--black-primary)
+}
+
+.order-content-food{
+  font-size: 1.75rem;
+  color: var(--black-primary);
+  
+  
+}
+.order-content-button{
+  font-family: var(--ff-inter);
+  font-size: 1.25rem;
+  color: var(--gray-700);
+  
+}
+
+
+.order-price{
+  font-size: 1.25rem;
+  color: var(--black-primary);
+}
+.order-confirmation-text{
+  font-size: 2rem;
+  text-align: center;
+  color: var(--green-700);
+}
+
+.total-price-text{
+  font-size: 1.75rem;
+  font-family: var(--ff-smythe);
+  color: var(--black-primary);
+}
+.total-price-amount{
+  font-size: 1.25rem;
+    color: var(--black-primary);
+}
+.discount{
+  color: var(--green-500);
+}
+.order-button{
+  font-size: 1rem;
+
+}
+
+
+.btn-primary{
+     font-family: var(--ff-verdana);
+     color: var(--white-primary);
+     font-weight: 700;
+
+}
+
+.new-order-button{
+  font-family: var(--ff-verdana);
+  font-size: 1
+}
+.form-title{
+  font-family:var(--ff-verdana);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.payment-form-button,.payment-form-input{
+  font-family: var(--ff-verdana);
+  font-size: 1.25rem;
+}
+
+
+.payment-form-button{
+  color: var(--white-primary);
+  font-weight: 700;
+}
+.payment-form-input{
+  color: var(--gray-500);
+}
+
+.close-form{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+
+  /* <!-- Buttons --> */
+
+.btn-primary{
+  padding: 1rem 2rem;
+  border-radius: 0.24313rem;
+  border: none;
+  background: #16DB99;
+}
+button:hover,i:hover,.icon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+
+
+.new-order-button{
+  margin-block: 0.5rem;
+}
+
+
+
+  /* <!-- Main Styles --> */
+header{
+  background-image: url('./assets/img/jimmys-diner.png');
+  min-height: 14rem;
+  height: 100%;
+  
+  
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}    
+
+
+.menu-item{
+  width: 100%; 
+}
+
+
+.menu-content-wrapper{
+  gap:1.25rem;
+}
+
+.menu-content-food-wrapper{
+ flex:2
+}
+.menu-food-emoji{
+  flex:.75
+}
+.menu-food-name{
+   padding-block: .5rem;
+}
+
+.menu-food-ingredients{
+   padding-block: .5rem;
+}
+.menu-food-price{
+   padding-block: 1rem;
+}
+
+.menu-hr{
+  border: 2px solid var(--gray-100);
+  width:100%;
+}
+.menu-hr:last-of-type{
+  margin-bottom: 0
+}
+.order-hr{
+  border: 1.25px solid var(--black-tertiary);
+  width:100%;
+  margin-block: 0.75rem;
+}
+
+.order-container{
+  height: fit-content;
+  
+}
+
+.order-content-wrapper{
+  gap:.8rem;
+  flex:1;
+  max-width: 11rem;
+
+}
+.order-content-food{
+  min-width: 8.5rem;;
+}
+
+i{
+  border-top: none;;
+  border-bottom: none;
+}
+
+.order-price{
+  min-width: 1.8rem;
+  text-align: right;
+}
+.order-price-wrapper{
+  gap:.5rem;
+}
+.total-price-wrapper{
+  padding-block: .25rem;
+}
+#body{
+  position: absolute;
+}
+.order-button{
+  margin-block: .5rem;
+}
+.form-wrapper{
+  
+
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%; transform:translate(-50%, -50%); 
+  margin:auto; 
+  border-radius: 0.25rem;
+
+  box-shadow: 5.186544418334961px 5.186544418334961px 255.43731689453125px 0px #00000080;
+  
+}
+
+
+.form-container{
+
+  padding-block: 1rem;
+  
+  gap:1rem;
+  margin: auto; 
+
+}
+
+.payment-form{
+  padding-inline: 0.5rem;
+  gap: 1rem;
+}
+
+.close-form{
+  padding-block: 1rem;
+  margin-left: auto;
+}
+
+.close-form:hover{
+  opacity: .5;
+  text-decoration: underline;
+  transform: scale(1.15);
+}
+.form-title{
+  justify-self: center;
+  margin-left: auto;
+  
+}
+.payment-form-input{
+  padding: .75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 1.2px solid var(--gray-500);  
+}
+
+
+.order-confirmation-container{
+  gap:1rem;
+  padding-block: 1rem;
+  background-color: #ECFDF5;
+}
+
+
+
+i:hover{
+  cursor: pointer;
+  
+}
+
+@media(min-width:680px){
+  html{
+    font-size: 1.05rem;
+  }
+ 
+  .container{
+    padding-inline: 1.5rem; 
+    max-width: 32.5rem;
+  }
+  .btn-primary{
+    margin-inline:auto;
+  }
+  .menu-food-emoji{
+    font-size: 4.875rem;
+    min-width:7rem;
+  }
+  .menu-food-ingredients{
+    font-size: 1rem;;
+  }
+  .menu-content-wrapper{
+  
+    width: 100%;
+    gap:2.5rem;
+  }
+  .order-content-food{
+    min-width: 10rem;
+  }
+}
