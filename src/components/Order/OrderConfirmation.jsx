@@ -12,4 +12,4 @@ const OrderConfirmation = ({customerName,newOrder}) => {
   )
 }
 
-export default OrderConfirmation
+export default OrderConfirmation  

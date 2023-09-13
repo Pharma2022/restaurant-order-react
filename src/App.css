@@ -1,6 +1,6 @@
 *,*::before,*::after{
   box-sizing: border-box;
-  transition: all ease 0.3s;
+
 }
 
 :root{
@@ -343,15 +343,12 @@ i{
   margin-block: .5rem;
 }
 .form-wrapper{
-  
-
   background-color: #ffffff;
   position: fixed;
   top: 50%;
   left: 50%; transform:translate(-50%, -50%); 
   margin:auto; 
   border-radius: 0.25rem;
-
   box-shadow: 5.186544418334961px 5.186544418334961px 255.43731689453125px 0px #00000080;
   
 }
