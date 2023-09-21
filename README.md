@@ -7,9 +7,8 @@ $ npm install
 $ npm run dev
 ````
 
-This is a quiz application that uses a restful API from https://opentdb.com/api_config.php . There is no API key required.
 
-See [Demo]([https://get-quizzical.netlify.app/](https://shahs-diner.netlify.app/))
+See [Demo](https://shahs-diner.netlify.app/)
 
 ## Functionality
 - This features a Menu which has items which you can add to the an order
