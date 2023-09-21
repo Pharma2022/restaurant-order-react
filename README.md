@@ -29,6 +29,8 @@ See [Demo]([https://get-quizzical.netlify.app/](https://shahs-diner.netlify.app/
 - To refactor the CSS to make maintenance easier
 - To wire up my project to firebase rather than iterating over a data.js file
 - To add a dark mode using React-switch
+- I would like to add backend functionality to actually verify and accept card details to process payments . I believe I can achieve this using Firebase and will need to do this if I ever develop e-commerce applications. 
+
 
 ### If you wish to connect with me or find out more about my projects you can:
 - Visit my [linkedin](https://www.linkedin.com/in/shah-aowal-17b59653/)
